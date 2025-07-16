@@ -1,0 +1,140 @@
+/* =========================
+   Hero Section
+   ========================= */
+.hero-section {
+    background:   url('../img/hero-bg.png') center/cover no-repeat;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+.relative { position: relative; }
+.img-hero { width: 386px; height: 386px; border-radius: 40px; object-fit: cover; }
+.img-hero1 { position: absolute; top: 0; left: 0; }
+.img-hero2 { position: absolute; bottom: 0; right: 0; }
+
+/* =========================
+   Features Section
+   ========================= */
+.features-section { background-color: #fff; padding-top: x; }
+.feature-box { background-color: #F9F6F0; border-radius: 12px; padding: 60px 11px; text-align: center; min-height: 200px; box-shadow: 0 0 10px rgba(0,0,0,0.03); }
+.feature-box img { width: 40px; height: 40px; margin-bottom: 15px; }
+
+/* =========================
+   Who We Are Section
+   ========================= */
+.gradient-section { position: relative; padding: 100px 20px; color: white; overflow: hidden; background: url('../img/about.png') center/cover no-repeat; }
+
+/* =========================
+   Legal Section
+   ========================= */
+.legal-section { background-color: #F9F6F0; padding: 60px 20px; }
+.legal-img { width: 522.68px; height: 506px; border-radius: 24px; object-fit: cover; }
+.legal-img2 { position: absolute; top: -27px; left: -52px; }
+.legal-img1 { position: absolute; bottom: -62px; right: 170px; }
+.legal-img3 { position: absolute; top: 150px; right: 70px; }
+.legal-img4 { position: absolute; top: -59px; left: 250px; }
+.check-circle { display: inline-flex; align-items: center; justify-content: center; background: #0d2c3f; color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.5rem; }
+
+/* =========================
+   Clients Section
+   ========================= */
+.client-section { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), #03162C; padding: 20px 0; position: relative; overflow: hidden; }
+.client-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('../img/white-ribbed-fabric-texture1.png') center/cover no-repeat; opacity: 0.06; z-index: 1; }
+.client-section > .container { position: relative; z-index: 2; }
+.client-p { padding-top: 128px; padding-bottom: 128px; }
+
+/* =========================
+   Testimonials Section
+   ========================= */
+.testimonial-section { display: flex; gap: 40px; padding: 128px 24px 0px 24px; color: #fff; align-items: flex-start; flex-wrap: wrap; overflow: hidden; }
+.testimonial-left { min-width: 320px; max-width: 315px; }
+.testimonial-left h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 12px; }
+.testimonial-quote { color: #bfc9d8; font-size: 1.1rem; margin-bottom: 24px; }
+.testimonial-counter { font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; }
+.testimonial-counter span { color: #fff; }
+.testimonial-counter span:last-child { color: #bfc9d8; font-weight: 400; }
+.testimonial-controls { display: flex; gap: 16px; }
+
+/* Carousel Components */
+.testimonial-btn { width: 48px; height: 48px; border: none; border-radius: 8px; font-size: 2rem; font-weight: bold; background: #22395a; color: #fff; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; justify-content: center; }
+.testimonial-btn.next { background: #23b26d; color: #fff; }
+.testimonial-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.testimonial-carousel-wrapper { width: 100%; overflow: hidden; display: flex; align-items: center; }
+.testimonial-carousel { display: flex; gap: 32px; width: 100%; transition: transform 0.4s cubic-bezier(.4,1.3,.6,1); }
+.testimonial-card { flex: 1 1 0; min-width: 0; max-width: 100%; border-radius: 16px; padding: 32px 20px; color: #fff; text-align: left; box-shadow: 0 4px 24px rgba(0,0,0,0.08); opacity: 0.7; transition: opacity 0.3s, box-shadow 0.3s; background: #22395a; }
+.testimonial-card.active { background: rgba(26, 52, 80, 0.4); opacity: 1; box-shadow: 0 8px 32px rgba(47, 45, 45, 0.12); border-radius: 8px; }
+.testimonial-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; }
+.testimonial-card .testimonial-text { font-size: 1rem; color: #e0e0e0; }
+
+/* =========================
+   Contact Section
+   ========================= */
+.contact-section-custom { background: #f9f6f0; padding: 60px 0; }
+.contact-info-panel h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+.contact-underline { width: 103px; height: 4px; background: #27A469; border-radius: 2px; margin-bottom: 1.2rem; }
+.contact-desc { color: #222; font-size: 1.1rem; margin-bottom: 1.5rem; }
+.contact-icons { display: flex; gap: 32px; margin-bottom: 1.5rem; }
+.contact-icon-item { display: flex; align-items: center; gap: 12px; }
+.contact-icon-circle { background: #eafaf3; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
+.contact-label { font-size: 1rem; color: #222; font-weight: 500; }
+.contact-value { font-size: 1rem; color: #222; }
+.contact-img-wrapper { position: relative; margin-top: 2rem; width: 100%; max-width: 350px; }
+.contact-img-main { width: 100%; border-radius: 24px; display: block; filter: grayscale(10%) brightness(0.95); }
+.contact-icon-img { height: 32px; width: 32px; }
+.contact-form-custom .form-label { font-weight: 500; color: #222; }
+.contact-form-custom .form-control, .contact-form-custom .form-select { background: #fff; border-radius: 6px; font-size: 1rem; color: #222; }
+.contact-form-custom .form-control:focus, .contact-form-custom .form-select:focus { border-color: #23b26d; box-shadow: 0 0 0 2px #eafaf3; }
+.btn-success { background: #27A469; border: none; font-size: 1.1rem; border-radius: 8px; padding: 20px 45px; }
+.btn-success:hover { background: transparent; border: solid 1px #27A469; color: #27A469; }
+
+/* =========================
+   Footer Section
+   ========================= */
+footer { background-color: #042142; color: white; padding: 86px 20px; }
+footer a { color: white; text-decoration: none; }
+footer a:hover { text-decoration: underline; color: #23B26D; }
+footer .text-muted { color: #B6C2CE !important; }
+footer .bg-secondary.bg-opacity-25 { background-color: rgba(108, 117, 125, 0.25); }
+footer img { max-height: 60px; }
+footer .ol { list-style: none; }
+.bottom-bar { padding: 23px 76px; }
+body { font-family: 'Manrope', sans-serif; }
+
+/* =========================
+   Responsive & Media Queries
+   ========================= */
+@media screen and (max-width: 768px) {
+  .legal-img { width: 100%; height: auto; }
+  .legal-img2, .legal-img1, .legal-img3, .legal-img4 { position: static; margin: 20px 0; }
+  .w-md-100 { width: 100%; }
+  .py-custom { padding-top: 4rem; padding-bottom: 4rem; }
+  .gradient-section { padding: 50px 20px; }
+  .testimonial-section { flex-direction: column; }
+  .testimonial-carousel-wrapper { order: 1; }
+  .testimonial-left { order: 2; } 
+  .contact-section-custom { padding: 60px 0; }
+  .contact-info-panel { margin-bottom: 40px; }   
+}
+@media (max-width: 767.98px) {
+  .client-p { padding-top: 60px; padding-bottom: 30px; }  
+  .testimonial-carousel { gap: 0; }
+  .testimonial-card:not(.active) { display: none !important; }
+  .testimonial-card { min-width: 0; max-width: 100%; flex: 1 1 100%; }
+  .bottom-bar { padding: 10px; text-align: center; }
+  nav .container { padding: 15px; }
+  .contact-info-panel, .contact-form-custom { max-width: 100%; padding-left: 15px !important; }
+  .hero-section .col-md-6.order-2 { text-align: center; }
+  .hero-section .btn.btn-hero { display: inline-block; margin-left: auto; margin-right: auto; }
+}
+@media (max-width: 1100px) {
+  .testimonial-section { flex-direction: column; align-items: stretch; }
+  .testimonial-carousel { gap: 16px; }
+  .testimonial-card { padding: 24px 8px; }
+  .contact-icons { display: block !important; }
+  .img-hero1 { position: absolute; top: -42px; left: -37px; }
+}
+@media (max-width: 991px) {
+  .contact-section-custom .row { flex-direction: column; }
+  .contact-info-panel, .contact-form-custom { max-width: 100%; }
+  .contact-img-wrapper { margin: 2rem auto 0 auto; }
+}
